@@ -1,0 +1,125 @@
+body{
+    background-color: transparent;
+    margin: 0px auto;
+    border: none;
+    width:100%;
+}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+
+.button
+{
+    width: 50%;
+    height: 50vh;
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    transition-duration: 0.8s;
+    background-position: center;
+    border-radius: 2vh;
+
+    margin: none;
+    border: none;
+    outline: none;
+}
+
+.button:active {
+    background-size: 100%;
+    transition: background 0s;
+    margin: none;
+    border: none;
+}
+
+#b1
+{
+    left: 0;
+    top: 0;
+}
+
+#b1:active
+{
+  background-color: #01c5c4;
+}
+
+#b2
+{
+    left: 50%;
+    top: 0;
+}
+
+#b2:active{
+    background-color: #b8de6f;
+}
+
+#b3
+{
+    left: 0;
+    top: 50%;
+}
+
+#b3:active{
+    background-color: #f1e189;
+}
+
+#b4
+{
+    left: 50%;
+    top: 50%;
+}
+
+#b4:active
+{
+    background-color: #f39233;
+}
+
+#errorPanel
+{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+
+    left: 0;
+    right: 50%;
+    bottom: 50%;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+
+#panelExito
+{
+    background-color: white;
+    color: black;
+    position: absolute;
+    height: 18%;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: justify;
+    text-align: center; 
+    vertical-align: middle;
+
+    border-radius: 4vh;
+    
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 130%;
+}
+
+#exito
+{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+
+    left: 0;
+    top: 0;
+    position: relative;
+    display: none;
+}
