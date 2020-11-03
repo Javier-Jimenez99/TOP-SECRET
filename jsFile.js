@@ -1,5 +1,5 @@
 $(document).ready(function(){  
-    const patron = [1, 2, 3, 4];
+    const patron = [2, 4, 4, 3, 2, 4, 3];
     var auxPatron = [];
 
     function checkPatron() {
