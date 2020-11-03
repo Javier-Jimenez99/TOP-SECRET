@@ -9,12 +9,12 @@ $(document).ready(function(){
         }
 
         if (goodPatron && i == patron.length) {
-            console.log("Lo lograste!!")
+
             $("#exito").show(500)
             
             $("#panelExito p").text("De tus últimas 20 publicaciones de Instagram 15 son sobre este tema.")
 
-            $(".button").prop('disabled', true);
+            $("button").prop('disabled', true);
             auxPatron = [];
         }
         

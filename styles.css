@@ -11,7 +11,7 @@ body{
     text-align: center;
 }
 
-.button
+button
 {
     width: 50%;
     height: 50vh;
@@ -22,15 +22,13 @@ body{
     background-position: center;
     border-radius: 2vh;
 
-    margin: none;
     border: none;
     outline: none;
 }
 
-.button:active {
+button:active {
     background-size: 100%;
     transition: background 0s;
-    margin: none;
     border: none;
 }
 
@@ -108,8 +106,8 @@ body{
 
     border-radius: 4vh;
     
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    font-size: 130%;
+    font-family: monospace;
+    font-size: 18px;
 }
 
 #exito
@@ -122,4 +120,12 @@ body{
     top: 0;
     position: relative;
     display: none;
+}
+
+@media(max-width:768px){
+    #panelExito{
+        width: 50%;
+        height: 20%;
+        font-size: 14px;
+    }
 }
