@@ -9,13 +9,16 @@ $(document).ready(function(){
         }
 
         if (goodPatron && i == patron.length) {
+            $("#b1").hide(500)
+            $("#b2").hide(500)
+            $("#b3").hide(500)
+            $("#b4").hide(500)
 
             $("#exito").show(500)
             
-            //$("#panelExito p").text("De tus últimas 20 publicaciones de Instagram 15 son sobre este tema.")
+            $("#panelExito p:nth-of-type(1)").text("Espero que tengas a mano un mapa porque te va a hacer falta")
+            $("#panelExito p:nth-of-type(2)").text("48°52'12.4\"N 2°46'48.1\"E")
             
-            $("a[href^='https://www.google.com/maps/place/Disneyland/@33.8120918,-117.9189742,15z/data=!4m5!3m4!1s0x0:0x2ef62f8418225cfa!8m2!3d33.8120918!4d-117.9189742']").attr('target','_blank');
-
             $("button").prop('disabled', true);
             auxPatron = [];
         }
