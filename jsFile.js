@@ -12,7 +12,9 @@ $(document).ready(function(){
 
             $("#exito").show(500)
             
-            $("#panelExito p").text("De tus últimas 20 publicaciones de Instagram 15 son sobre este tema.")
+            //$("#panelExito p").text("De tus últimas 20 publicaciones de Instagram 15 son sobre este tema.")
+            
+            $("a[href^='https://www.google.com/maps/place/Disneyland/@33.8120918,-117.9189742,15z/data=!4m5!3m4!1s0x0:0x2ef62f8418225cfa!8m2!3d33.8120918!4d-117.9189742']").attr('target','_blank');
 
             $("button").prop('disabled', true);
             auxPatron = [];
